@@ -1,0 +1,19 @@
+body
+{
+  font-size:30pt;
+}
+h2
+{
+  color:ForestGreen;
+}
+table
+{
+  border-color:BlueViolet;
+}
+button
+{
+  height:160px;
+  width:280px;
+  font-size:30pt;
+  color:DeepPink;
+}
