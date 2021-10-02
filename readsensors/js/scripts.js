@@ -1,0 +1,70 @@
+var pth=window.prompt('输入服务器地址（IP地址:端口）：','localhost:4080');
+if(pth==null || pth=="")
+{
+    pth='localhost:4080';
+}
+var req=new XMLHttpRequest();
+var resp;
+req.onreadystatechange=function()
+{
+    if(req.readyState==4 && req.status==200)
+    {
+        resp=JSON.parse(req.responseText);
+        //加速度传感器
+        document.getElementById("ax").innerText=resp.acceleration[0].toFixed(2);
+        document.getElementById("ay").innerText=resp.acceleration[1].toFixed(2);
+        document.getElementById("az").innerText=resp.acceleration[2].toFixed(2);
+        //磁场传感器
+        document.getElementById("mx").innerText=resp.magnet[0].toFixed(2);
+        document.getElementById("my").innerText=resp.magnet[1].toFixed(2);
+        document.getElementById("mz").innerText=resp.magnet[2].toFixed(2);
+        //方向传感器
+        document.getElementById("azimu").innerText=resp.orientation.azimuth.toFixed(0);
+        document.getElementById("pitch").innerText=resp.orientation.pitch.toFixed(0);
+        document.getElementById("roll").innerText=resp.orientation.roll.toFixed(0);
+        //陀螺仪
+        document.getElementById("gx").innerText=resp.gyroscope[0].toFixed(3);
+        document.getElementById("gy").innerText=resp.gyroscope[1].toFixed(3);
+        document.getElementById("gz").innerText=resp.gyroscope[2].toFixed(3);
+        //光线传感器
+        document.getElementById("li").innerText=resp.light[0].toFixed(0);
+        //距离传感器
+        document.getElementById("pr").innerText=resp.proximity[0].toFixed(0);
+        //重力传感器
+        document.getElementById("grx").innerText=resp.gravity[0].toFixed(2);
+        document.getElementById("gry").innerText=resp.gravity[1].toFixed(2);
+        document.getElementById("grz").innerText=resp.gravity[2].toFixed(2);
+        //线性加速度计
+        document.getElementById("lix").innerText=resp.linear_acceleration[0].toFixed(2);
+        document.getElementById("liy").innerText=resp.linear_acceleration[1].toFixed(2);
+        document.getElementById("liz").innerText=resp.linear_acceleration[2].toFixed(2);
+        //旋转矢量传感器
+        document.getElementById("rox").innerText=resp.rotation[0].toFixed(3);
+        document.getElementById("roy").innerText=resp.rotation[1].toFixed(3);
+        document.getElementById("roz").innerText=resp.rotation[2].toFixed(3);
+        document.getElementById("ro").innerText=resp.rotation[3].toFixed(3);
+        //计步器
+        if(resp.step_counter==null)
+        {
+            document.getElementById("step").innerText=0;
+        }
+        else
+        {
+            document.getElementById("step").innerText=resp.step_counter.toFixed(0);
+        }
+        //卫星定位
+        document.getElementById("longi").innerText=resp.location.longitude.toFixed(6);
+        document.getElementById("lati").innerText=resp.location.latitude.toFixed(6);
+        document.getElementById("alti").innerText=resp.location.altitude.toFixed(1);
+        document.getElementById("bear").innerText=resp.location.bearing.toFixed(1);
+        document.getElementById("speed").innerText=resp.location.speed.toFixed(1);
+        document.getElementById("time").innerText=resp.location.time.toFixed(0);
+        redo();
+    }
+};
+function redo()
+{
+    req.open("GET","http://"+pth+"/",true);
+    req.send();
+}
+redo();

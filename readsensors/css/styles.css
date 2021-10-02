@@ -1,0 +1,24 @@
+body
+{
+  font-size:30pt;
+}
+h2
+{
+  color:Crimson;
+}
+th
+{
+  text-align:left;
+  color:MediumVioletRed;
+}
+td
+{
+  width:10em;
+  text-align:right;
+  color:BlueViolet;
+}
+hr
+{
+  border-width:1px;
+  border-color:LightSteelBlue;
+}
