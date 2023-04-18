@@ -7,6 +7,7 @@
       body
       {
         text-align:center;
+        font-size:60pt;
         background-image:url("image.jpg");
         background-size:cover;
       }
@@ -18,13 +19,21 @@
       {
         color:Indigo;
       }
+      audio
+      {
+        zoom:3;
+      }
     </style>
   </head>
   <body>
     <h2>听歌识曲</h2>
     <h1>曲目5</h1>
-    <audio controls autoplay>
+    <audio controls>
       <source src="music.mp3" type="audio/mpeg"/>
     </audio>
+    <script type="text/javascript">
+      document.getElementsByTagName("audio")[0].load();
+      document.getElementsByTagName("audio")[0].play();
+    </script>
   </body>
 </html>
