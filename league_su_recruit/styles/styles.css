@@ -1,0 +1,247 @@
+.mainBody
+{
+    background-image: url("./../image/background.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+.mainDiv
+{
+    width: 100%;
+    height: 100%;
+}
+.contentDiv
+{
+    width: 100%;
+    height: calc(100% - 3.7em);
+}
+.tabDiv
+{
+    width: 100%;
+    height: 3.7em;
+    position: fixed;
+}
+.tabButtonS
+{
+    width: 100%;
+    height: 100%;
+}
+.tabButton
+{
+    width: 24%;
+    height: 100%;
+    margin: 0 0.5%;
+}
+.tabA
+{
+    padding: 1em 0 !important;
+    text-align: center;
+}
+.introductionDivS
+{
+    width: 100%;
+    height: 100%;
+}
+.introductionDiv
+{
+    width: 100%;
+    height: 100%;
+    padding: 0 !important;
+}
+.introductionMainDivS
+{
+    width: 100%;
+    height: 100%;
+}
+.introductionMainDiv
+{
+    width: 100%;
+    padding: 1.2em;
+    overflow: auto;
+}
+.introductionTitleDiv
+{
+    width: 100%;
+    height: 3em;
+    display: flex;
+    margin: 1.2em 0;
+    padding: 0 0.8em;
+}
+.introductionIcon
+{
+    width: 3em;
+    height: 3em;
+}
+.introductionTitleText
+{
+    width: calc(100% - 3em);
+    margin: 0;
+    margin-left: 1em;
+    padding-top: 0.6em;
+    font-weight: bold;
+}
+.introductionLine
+{
+    margin: 0;
+    border-top-width: thin;
+    border-top-color: Gray;
+}
+.introductionEndDiv
+{
+    width: 100%;
+    height: 4.3em;
+}
+.introductionParagraph
+{
+    padding-left: 0.8em;
+    padding-right: 0.8em;
+}
+.introductionPs
+{
+    font-weight: normal;
+    color: Gray;
+}
+.introductionLabelTuan
+{
+    font-weight: normal;
+    color: Crimson;
+}
+.introductionLabelSu
+{
+    font-weight: normal;
+    color: ForestGreen;
+}
+.bmMainDivS
+{
+    width: 100%;
+    height: 100%;
+}
+.bmMainDiv
+{
+    width: 100%;
+    padding: 1.2em 2em;
+    overflow: auto;
+}
+.bmHeadText
+{
+    width: 100%;
+    text-align: center;
+    color: DarkCyan;
+}
+.bmText
+{
+    width: 100%;
+}
+.bmInput
+{
+    width: 100%;
+    font-size: 1.2em !important;
+    background-color: rgba(245, 245, 245, 0.6) !important;
+}
+.bmRadioGroupS
+{
+    width: 100%;
+    display: flex;
+    margin-bottom: 1em;
+}
+.bmRadioGroup
+{
+    width: 50%;
+    display: flex;
+    padding-left: 6%;
+}
+.bmRadio
+{
+    width: 2.2em;
+    height: 2.2em;
+    margin: 0 !important;
+}
+.bmRadioText
+{
+    margin: 0 !important;
+    padding-left: 0.4em;
+    font-size: 1.2em;
+}
+.bmSelectS
+{
+    width: 100%;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    font-size: 1.2em;
+    background-color: rgba(245, 245, 245, 0.6);
+}
+.bmSubmit
+{
+    width: 100%;
+    text-align: center;
+}
+.bmSubmitButton
+{
+    font-size: 1.2em;
+}
+.cxMainDivS
+{
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.dialogue
+{
+    text-align: left;
+}
+.innerImage
+{
+    width: 1.3em;
+    height: 1.3em;
+}
+.itcAd
+{
+    width: 100%;
+    margin: 0;
+    padding-top: 0.2rem;
+    padding-bottom: 0.5rem;
+    text-align: center;
+    font-size: x-small;
+}
+.itcAdBottom
+{
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: calc(100% - 3em);
+    transform: translate(-50%, -50%);
+}
+.blockBackground
+{
+    background-color: rgba(245, 245, 245, 0.5);
+}
+.loadingDialogue
+{
+    width: 100%;
+    height: 100%;
+}
+.galaxyBody
+{
+    width: 100%;
+    height: 100%;
+    background-color: #00102a;
+}
+.galaxyDiv
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.galaxyImage
+{
+    width: 15em;
+    height: 15em;
+}
+.galaxyText
+{
+    text-align: center;
+    font-weight: bolder;
+    color: #f5f5f5;
+}
