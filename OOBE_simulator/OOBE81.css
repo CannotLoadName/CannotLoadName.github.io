@@ -1,0 +1,76 @@
+        .xgoing0 {
+            position: fixed;
+            top: -1%;
+            left: -1%;
+            height: 101%;
+            width: 101%;
+            cursor: none;
+            color: #fff;
+            user-select: none;
+            background-color: #000000;
+            overflow: hidden;
+        }
+        .xgoing1 {
+            position: fixed;
+            top: -1%;
+            left: -1%;
+            height: 101%;
+            width: 101%;
+            cursor: none;
+            color: #fff;
+            overflow: hidden;
+            user-select: none;
+            background-color: #000000;
+            transition: all .7s;
+            animation: xgoing1ani 20s linear infinite 0s;
+        }
+@keyframes xgoing1ani {
+      0%   {
+        background: #00922c;
+      }
+      20%  {
+        background:#1c77b2;
+      }
+      35%  {
+        background:#5341c4;
+      }
+      50%  {
+        background:#94077c;
+      }
+      65%{
+        background: #c53f37;
+      }
+      80%{
+        background: #c8964b;
+      }
+      95%{
+        background: #37a58e;
+      }
+      100% {
+        background: #00922c;
+      }
+     }
+      #oobeword1{
+                display: none;
+                position: absolute;
+                top: 44.5%;
+                left: 0%;
+                width: 100%;
+                font-family: 微软雅黑;
+                font-weight: 100;
+                text-align: center;
+                font-size: 50px;
+                z-index: 1000;
+            }
+            #oobeword2 {
+                display: none;
+                position: absolute;
+                bottom: 5%;
+                left: 0%;
+                width: 100%;
+                font-family: 微软雅黑;
+                font-weight: 100;
+                text-align: center;
+                font-size: 25px;
+                z-index: 1000;
+            }
