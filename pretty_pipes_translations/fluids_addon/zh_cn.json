@@ -1,0 +1,22 @@
+{
+  "block.ppfluids.fluid_pipe": "流体管道",
+  "item.ppfluids.fluid_item": "流体容器",
+  "item.ppfluids.low_fluid_extraction_module": "低级流体抽取模块",
+  "item.ppfluids.medium_fluid_extraction_module": "中级流体抽取模块",
+  "item.ppfluids.high_fluid_extraction_module": "高级流体抽取模块",
+  "item.ppfluids.low_fluid_filter_module": "低级流体过滤模块",
+  "item.ppfluids.medium_fluid_filter_module": "中级流体过滤模块",
+  "item.ppfluids.high_fluid_filter_module": "高级流体过滤模块",
+  "item.ppfluids.low_fluid_retrieval_module": "低级流体检索模块",
+  "item.ppfluids.medium_fluid_retrieval_module": "中级流体检索模块",
+  "item.ppfluids.high_fluid_retrieval_module": "高级流体检索模块",
+  "item.ppfluids.fluid_limiter_module": "流体限制模块",
+  "info.prettypipes.fluid_extraction_module": "从相邻储罐中提取流体，过滤和提取速度因等级而异，可以防止过量发送流体。",
+  "info.prettypipes.fluid_filter_module": "限制从管道流入相邻储罐，过滤量因等级而异。",
+  "info.prettypipes.fluid_retrieval_module": "从网络中的其他储罐中提取流体，过滤和提取速度因等级而异，可以防止过量发送流体。",
+  "info.prettypipes.fluid_limiter_module": "限制进入相邻储罐的流体量，自动地防止过量发送流体。",
+  "info.ppfluids.fluid_item.usage": "对流体储罐使用此物品，即可将内容物输入储罐！",
+  "info.ppfluids.limit_buckets_on": "桶",
+  "info.ppfluids.limit_buckets_off": "毫桶",
+  "info.ppfluids.limited_amount": "最大流体量："
+}
