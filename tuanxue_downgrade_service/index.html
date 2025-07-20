@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>系统迁移中</title>
+        <link href="./sweetalert2.min.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <script src="./sweetalert2.min.js"></script>
+        <div style="text-align:center;">
+            <h2 id="headText">系统迁移中</h2>
+            <p id="mainText">因团学云服务器过户和续租，<br/>该网站暂时无法使用。</p>
+        </div>
+        <script>
+            document.getElementById("headText").style.visibility="hidden";
+            document.getElementById("mainText").style.visibility="hidden";
+            Swal.fire({
+                title:document.getElementById("headText").innerHTML,
+                html:document.getElementById("mainText").innerHTML,
+                icon:"warning",
+                allowOutsideClick:false,
+                allowEscapeKey:false,
+                confirmButtonText:"退出"
+            }).then((result)=>{
+                window.close();
+            });
+        </script>
+    </body>
+</html>
