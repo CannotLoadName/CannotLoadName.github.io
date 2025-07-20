@@ -23,6 +23,8 @@
                 allowEscapeKey:false,
                 confirmButtonText:"退出"
             }).then((result)=>{
+                window.opener=null;
+                window.open("","_self");
                 window.close();
             });
         </script>
